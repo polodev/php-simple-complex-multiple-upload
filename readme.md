@@ -1,4 +1,5 @@
 # How to upload file in php
+first make folder  name with `file` in root. All uploaded file will be uploaded to the file folder.
 ## simple uploader
 In simple uploader file I have upload any file using php.
 
