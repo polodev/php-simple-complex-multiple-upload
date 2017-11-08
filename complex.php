@@ -12,9 +12,10 @@ if (isset($_FILES['picture'])) {
     $tmp_name = $file['tmp_name'];
     $destination = 'file/' . $name;
     move_uploaded_file($tmp_name, $destination);
-    $message = ['your uploaded file is successful', 'success'];
+    $message =  [$name . ' - file uploaded successfully', 'success'];
   } else {
-    $message = ['Your uploaded file must be a image with jpg or png or gif format', 'danger'];
+    $message = ['Your uploaded file must be an image with jpg or png or gif format', 'danger'];
+    $message = [$name . ' - didn\'t uploaded. Your uploaded file must be a image with jpg or png or gif format', 'danger'];
   }
   
 
@@ -36,6 +37,7 @@ if (isset($_FILES['picture'])) {
         <?php echo $message[0]; ?>
       </div>
     <?php endif; ?>
+    <a href="/" class="btn btn-light mb-5">&#x1F3E0; Go to Home Page</a>
     <form action="" method="post" enctype="multipart/form-data">
       <div class="form-group">
           <label for="picture">Picture Upload</label>

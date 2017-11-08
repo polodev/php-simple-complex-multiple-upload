@@ -27,6 +27,7 @@ if( isset( $_FILES['pictures'] ) ) {
         </div>
       <?php endforeach; ?>
     <?php endif; ?>
+    <a href="/" class="btn btn-light mb-5">&#x1F3E0; Go to Home Page</a>
     <form action="" method="post" enctype="multipart/form-data">
       <div class="form-group">
           <label for="pictures">Picture</label>

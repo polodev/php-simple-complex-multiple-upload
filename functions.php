@@ -21,8 +21,8 @@ function upload_picture ($file) {
     $tmp_name = $file['tmp_name'];
     $destination = 'file/' . $name;
     move_uploaded_file($tmp_name, $destination);
-    return  [$name . ' file uploaded successfully', 'success'];
+    return  [$name . ' - file uploaded successfully', 'success'];
   } else {
-    return [$name . ' didn\'t uploaded. Your uploaded file must be a image with jpg or png or gif format', 'danger'];
+    return [$name . ' - didn\'t uploaded. Your uploaded file must be an image with jpg or png or gif format', 'danger'];
   }
 }

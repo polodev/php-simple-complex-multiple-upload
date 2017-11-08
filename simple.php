@@ -18,6 +18,7 @@ if (isset($_FILES['picture'])) {
 </head>
 <body>
   <div class="mt-5 container">
+    <a href="/" class="btn btn-light mb-5">&#x1F3E0; Go to Home Page</a>
     <form action="" method="post" enctype="multipart/form-data">
       <div class="form-group">
           <label for="picture">Picture Upload</label>
