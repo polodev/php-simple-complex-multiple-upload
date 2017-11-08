@@ -1,0 +1,1 @@
+.row>.col-md-6.mx-auto.mt-5>.card>.card-header>h2{Uploading file in php}^.card-body>p>a[href='simple.php' class='btn btn-link']{Simple Uploading}+a[href='complex.php' class='btn btn-link']{Complex uploading}
