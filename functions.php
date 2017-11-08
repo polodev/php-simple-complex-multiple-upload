@@ -19,6 +19,10 @@ function upload_picture ($file) {
   $allowed_extension = ['jpg', 'png', 'gif'];
   if ( in_array($extension, $allowed_extension) ) {
     $tmp_name = $file['tmp_name'];
+    
+    if (!file_exists('file')) {
+      mkdir('file', 0777, true);
+    }
     $destination = 'file/' . $name;
     move_uploaded_file($tmp_name, $destination);
     return  [$name . ' - file uploaded successfully', 'success'];

@@ -3,6 +3,9 @@ if (isset($_FILES['picture'])) {
   $file = $_FILES['picture'];
   $name = $file['name'];
   $tmp_name = $file['tmp_name'];
+  if (!file_exists('file')) {
+    mkdir('file', 0777, true);
+  }
   $destination = 'file/' . $name;
   move_uploaded_file($tmp_name, $destination);
 }
